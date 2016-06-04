@@ -51,15 +51,13 @@
                             <a class="expand-toggle" href="https://dlang.org/community.html"><span>Community</span>
                             </a>
                             <ul class="expand-content">
-                                <li><a href="https://dlang.org/blog">Blog</a></li>
                                 <li><a href="https://dlang.org/bugstats.php">Bug Tracker</a></li>
+                                <li><a href="https://dlang.org/blog">Blog</a></li>
                                 <li><a href="https://forum.dlang.org">Forums</a></li>
                                 <li><a href="irc://irc.freenode.net/d">IRC</a></li>
                                 <li><a href="https://github.com/dlang">D on GitHub</a></li>
                                 <li><a href="https://wiki.dlang.org">Wiki</a></li>
-                                <li><a href="https://wiki.dlang.org/Review_Queue">Review Queue</a></li>
                                 <li><a href="https://twitter.com/search/q=%23dlang">Twitter</a></li>
-                                <li><a href="http://digitalmars.com/d/dlinks.html">More Links</a></li>
                             </ul>
                         </li>
                         <li class="expand-container">
