@@ -1600,13 +1600,8 @@ img.aligncenter {
     margin-bottom: 0;
 }
 
-.textwidget a {
-    border-bottom: 1px solid #333;
-}
-
-.textwidget a:hover,
-.textwidget a:focus {
-    border-bottom: 0;
+.textwidget ul {
+    list-style: none;
 }
 
 /* Content */
