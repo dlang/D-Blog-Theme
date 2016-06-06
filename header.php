@@ -47,7 +47,7 @@
                         <li>
                         <li><a href="https://dlang.org/download.html"><span>Downloads</span></a></li>
                         <li><a href="https://code.dlang.org"><span>Packages</span></a></li>
-                        <li class="expand-container">
+                        <li class="expand-container active">
                             <a class="expand-toggle" href="https://dlang.org/community.html"><span>Community</span>
                             </a>
                             <ul class="expand-content">
