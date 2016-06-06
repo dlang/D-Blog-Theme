@@ -52,7 +52,7 @@
                             </a>
                             <ul class="expand-content">
                                 <li><a href="https://dlang.org/bugstats.php">Bug Tracker</a></li>
-                                <li><a href="https://dlang.org/blog">Blog</a></li>
+                                <li><a class="active" href="https://dlang.org/blog">Blog</a></li>
                                 <li><a href="https://forum.dlang.org">Forums</a></li>
                                 <li><a href="irc://irc.freenode.net/d">IRC</a></li>
                                 <li><a href="https://github.com/dlang">D on GitHub</a></li>
