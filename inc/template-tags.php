@@ -38,25 +38,8 @@ function twentyfifteen_comment_nav() {
 }
 endif;
 
-if ( ! function_exists( 'twentyfifteen_entry_meta' ) ) :
-/**
- * Prints HTML with meta information for the categories, tags.
- *
- * @since Twenty Fifteen 1.0
- */
-function twentyfifteen_entry_meta() {
-	if ( is_sticky() && is_home() && ! is_paged() ) {
-		printf( '<span class="sticky-post">%s</span>', __( 'Featured', 'twentyfifteen' ) );
-	}
-
-	$format = get_post_format();
-	if ( current_theme_supports( 'post-formats', $format ) ) {
-		printf( '<span class="entry-format">%1$s<a href="%2$s">%3$s</a></span>',
-			sprintf( '<span class="screen-reader-text">%s </span>', _x( 'Format', 'Used before post format.', 'twentyfifteen' ) ),
-			esc_url( get_post_format_link( $format ) ),
-			get_post_format_string( $format )
-		);
-	}
+// mdparker: Pulled this out of twentyfifteen_entry_meta to move author & date up to post headers.
+function dblog_author_meta() {
 
 	if ( in_array( get_post_type(), array( 'post', 'attachment' ) ) ) {
 		$time_string = '<time class="entry-date published updated" datetime="%1$s">%2$s</time>';
@@ -79,14 +62,63 @@ function twentyfifteen_entry_meta() {
 		);
 	}
 
+	printf( '<span class="byline"><span class="author vcard"><span class="screen-reader-text">%1$s </span><a class="url fn n" href="%2$s">%3$s</a></span></span>',
+		_x( 'Author', 'Used before post author name.', 'twentyfifteen' ),
+		esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ),
+		get_the_author()
+	);
+}
+
+if ( ! function_exists( 'twentyfifteen_entry_meta' ) ) :
+/**
+ * Prints HTML with meta information for the categories, tags.
+ *
+ * @since Twenty Fifteen 1.0
+ */
+function twentyfifteen_entry_meta() {
+	if ( is_sticky() && is_home() && ! is_paged() ) {
+		printf( '<span class="sticky-post">%s</span>', __( 'Featured', 'twentyfifteen' ) );
+	}
+
+	$format = get_post_format();
+	if ( current_theme_supports( 'post-formats', $format ) ) {
+		printf( '<span class="entry-format">%1$s<a href="%2$s">%3$s</a></span>',
+			sprintf( '<span class="screen-reader-text">%s </span>', _x( 'Format', 'Used before post format.', 'twentyfifteen' ) ),
+			esc_url( get_post_format_link( $format ) ),
+			get_post_format_string( $format )
+		);
+	}
+
+	/*
+	if ( in_array( get_post_type(), array( 'post', 'attachment' ) ) ) {
+		$time_string = '<time class="entry-date published updated" datetime="%1$s">%2$s</time>';
+
+		if ( get_the_time( 'U' ) !== get_the_modified_time( 'U' ) ) {
+			$time_string = '<time class="entry-date published" datetime="%1$s">%2$s</time><time class="updated" datetime="%3$s">%4$s</time>';
+		}
+
+		$time_string = sprintf( $time_string,
+			esc_attr( get_the_date( 'c' ) ),
+			get_the_date(),
+			esc_attr( get_the_modified_date( 'c' ) ),
+			get_the_modified_date()
+		);
+
+		printf( '<span class="posted-on"><span class="screen-reader-text">%1$s </span><a href="%2$s" rel="bookmark">%3$s</a></span>',
+			_x( 'Posted on', 'Used before publish date.', 'twentyfifteen' ),
+			esc_url( get_permalink() ),
+			$time_string
+		);
+	}
+	*/
 	if ( 'post' == get_post_type() ) {
-		if ( is_singular() || is_multi_author() ) {
+		/*if ( is_singular() || is_multi_author() ) {
 			printf( '<span class="byline"><span class="author vcard"><span class="screen-reader-text">%1$s </span><a class="url fn n" href="%2$s">%3$s</a></span></span>',
 				_x( 'Author', 'Used before post author name.', 'twentyfifteen' ),
 				esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ),
 				get_the_author()
 			);
-		}
+		}*/
 
 		$categories_list = get_the_category_list( _x( ', ', 'Used between list items, there is a space after the comma.', 'twentyfifteen' ) );
 		if ( $categories_list && twentyfifteen_categorized_blog() ) {
