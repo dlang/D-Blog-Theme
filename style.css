@@ -1678,10 +1678,10 @@ a.post-thumbnail:focus {
     background-color: #fff;
     font-family: "Noto Sans", sans-serif;
 }
-
+/*
 .entry-content p + p {
     text-indent: 2.5em;
-}
+} */
 
 .entry-content,
 .entry-summary {
@@ -1697,10 +1697,10 @@ a.post-thumbnail:focus {
 .entry-summary,
 .page-content,
 .comment-content {
-    -webkit-hyphens: auto;
-    -moz-hyphens: auto;
-    -ms-hyphens: auto;
-    hyphens: auto;
+    -webkit-hyphens: none;
+    -moz-hyphens: none;
+    -ms-hyphens: none;
+    hyphens: none;
     word-wrap: break-word;
 }
 
