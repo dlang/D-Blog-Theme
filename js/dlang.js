@@ -57,42 +57,5 @@
         $('.search-container .expand-toggle').click(function() {
             $('#search-query input').focus();
         });
-
-        // [your code here] rotation for index.html
-        var $examples = $('.your-code-here-extra > pre');
-        if ($examples.length) {
-            var n = Math.floor(Math.random() * ($examples.length+1));
-            if (n)
-                $('#your-code-here-default > pre').replaceWith($examples[n-1]);
-        }
-
-        // Insert the show/hide button if the contents section exists
-        $('.page-contents-header').append('<span><a href="javascript:void(0);">[hide]</a></span>');
-
-        // Event to hide or show the "contents" section when the hide button
-        // is clicked
-        $(".page-contents-header a").click(function () {
-            var elem = $('.page-contents > ol');
-
-            if (elem.is(':visible')) {
-                $(this).text("[show]");
-                elem.hide();
-            } else {
-                $(this).text("[hide]");
-                elem.show();
-            }
-        });
     });
 })(jQuery);
-
-// "This Week in D" integration
-// setTwid is called from http://arsdnet.net/this-week-in-d/twid-latest.js
-// which is included in index.html
-function setTwid(url, title, description) {
-    var twid = $('body#Home .boxes .twid');
-    twid
-        .empty()
-        .append($('<a>').attr('href', url).text(title))
-        .append(': ')
-        .append(description);
-}
