@@ -104,55 +104,6 @@
 		}
 	}
 
-	function scroll() {
-		/*
-		var windowPos = $window.scrollTop();
-
-		if ( 955 > windowWidth ) {
-			return;
-		}
-
-		sidebarHeight = $sidebar.height();
-		windowHeight  = $window.height();
-		bodyHeight    = $body.height();
-
-		if ( sidebarHeight + adminbarOffset > windowHeight ) {
-			if ( windowPos > lastWindowPos ) {
-				if ( top ) {
-					top = false;
-					topOffset = ( $sidebar.offset().top > 0 ) ? $sidebar.offset().top - adminbarOffset : 0;
-					$sidebar.attr( 'style', 'top: ' + topOffset + 'px;' );
-				} else if ( ! bottom && windowPos + windowHeight > sidebarHeight + $sidebar.offset().top && sidebarHeight + adminbarOffset < bodyHeight ) {
-					bottom = true;
-					$sidebar.attr( 'style', 'position: fixed; bottom: 0;' );
-				}
-			} else if ( windowPos < lastWindowPos ) {
-				if ( bottom ) {
-					bottom = false;
-					topOffset = ( $sidebar.offset().top > 0 ) ? $sidebar.offset().top - adminbarOffset : 0;
-					$sidebar.attr( 'style', 'top: ' + topOffset + 'px;' );
-				} else if ( ! top && windowPos + adminbarOffset < $sidebar.offset().top ) {
-					top = true;
-					$sidebar.attr( 'style', 'position: fixed;' );
-				}
-			} else {
-				top = bottom = false;
-				topOffset = ( $sidebar.offset().top > 0 ) ? $sidebar.offset().top - adminbarOffset : 0;
-				$sidebar.attr( 'style', 'top: ' + topOffset + 'px;' );
-			}
-		} else if ( ! top ) {
-			top = true;
-			$sidebar.attr( 'style', 'position: fixed;' );
-		}
-
-		lastWindowPos = windowPos; */
-	}
-
-	function resizeAndScroll() {
-		resize();
-		//scroll();
-	}
-
 	$( document ).ready( function() {
 		$body          = $( document.body );
 		$window        = $( window );
@@ -160,19 +111,18 @@
 		adminbarOffset = $body.is( '.admin-bar' ) ? $( '#wpadminbar' ).height() : 0;
 
 		$window
-			.on( 'scroll.twentyfifteen', scroll )
 			.on( 'load.twentyfifteen', onResizeARIA )
 			.on( 'resize.twentyfifteen', function() {
 				clearTimeout( resizeTimer );
-				resizeTimer = setTimeout( resizeAndScroll, 500 );
+				resizeTimer = setTimeout( resize, 500 );
 				onResizeARIA();
 			} );
-		$sidebar.on( 'click.twentyfifteen keydown.twentyfifteen', 'button', resizeAndScroll );
+		$sidebar.on( 'click.twentyfifteen keydown.twentyfifteen', 'button', resize );
 
-		resizeAndScroll();
+		resize();
 
 		for ( var i = 1; i < 6; i++ ) {
-			setTimeout( resizeAndScroll, 100 * i );
+			setTimeout( resize, 100 * i );
 		}
 	} );
 
