@@ -19,6 +19,8 @@
 
 </div><!-- .site -->
 
+<script type="text/javascript" src="<?php bloginfo('template_directory') ?>/js/jquery.min.js"></script>
+<script type="text/javascript" src="<?php bloginfo('template_directory') ?>/js/dlang.js"></script>
 <?php wp_footer(); ?>
 
 </body>
