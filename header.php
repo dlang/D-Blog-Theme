@@ -14,7 +14,6 @@
     <link rel="stylesheet" href="<?php bloginfo('stylesheet_url') ?>">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,700,300' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Noto+Sans:400,700' rel='stylesheet' type='text/css'>
     <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
