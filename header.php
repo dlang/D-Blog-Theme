@@ -15,8 +15,6 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,700,300' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Noto+Sans:400,700' rel='stylesheet' type='text/css'>
-    <script type="text/javascript" src="<?php bloginfo('template_directory') ?>/js/jquery.min.js"></script>
-    <script type="text/javascript" src="<?php bloginfo('template_directory') ?>/js/dlang.js"></script>
     <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
