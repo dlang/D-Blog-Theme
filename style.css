@@ -685,6 +685,126 @@ a:focus {
     display: none
 }
 
+@media only screen and (max-width:54em)
+{
+    #top > .helper
+    {
+        padding: 0;
+    }
+
+    /* lay out navigation vertically */
+
+    #top #cssmenu, #top #search-box
+    {
+        display: block;
+    }
+
+    #top .logo
+    {
+        width: auto;
+    }
+
+    #top .logo > a
+    {
+        background: transparent; /* override :hover background change */
+        margin-left: 1em;
+    }
+
+    #top #cssmenu, #top .search-container
+    {
+        display: none;
+    }
+
+    #top .expand-container.open #cssmenu,
+    #top .expand-container .search-container
+    {
+        display: block;
+    }
+
+    #top #cssmenu
+    {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        border-top: 1px solid #943029;
+        clear: both;
+    }
+    #top #cssmenu > ul
+    {
+        border-bottom: 1px solid #943029;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    #top .search-container
+    {
+        padding: 0.6em 1em;
+        width: auto;
+    }
+
+    #top .search-container.expand-container .expand-toggle
+    {
+        display: none;
+    }
+
+    #top .expand-container > #search-box
+    {
+        border: 0;
+        display: block;
+        padding: 0;
+        position: static;
+    }
+
+    #top .expand-container .search-container
+    {
+        display: none;
+    }
+
+    #top .expand-container.open .search-container
+    {
+        display: block;
+    }
+
+    #top #cssmenu > ul > li
+    {
+        float: none;
+    }
+
+    #top #cssmenu > ul > li.expand-container.open > ul
+    {
+        border: none;
+
+        -moz-box-shadow: none;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+
+        position: static;
+    }
+
+    #top #cssmenu > ul > li.expand-container.open > ul > li > a
+    {
+        padding-left: 2em;
+    }
+
+    /* menu button */
+
+    #top a.hamburger
+    {
+        display: inline;
+        float: right;
+        font-size: 2em;
+        height: 1em;
+        line-height: 1;
+        padding: 0.15em 1em;
+    }
+    #top a.hamburger span
+    {
+        display: none;
+    }
+    #top a.hamburger::after
+    {
+        content: "\f0c9"; /* bars */
+        font-family: FontAwesome;
+    }
+}
+
 /* Menus */
 .main-navigation a {
     display: block;
