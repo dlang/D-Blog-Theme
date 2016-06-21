@@ -615,6 +615,12 @@ a:focus {
     position: relative;
 }
 
+#top .expand-container > .expand-toggle::after
+{
+    content: " \f0d7"; /* caret down */
+    font-family: FontAwesome;
+}
+
 #top #cssmenu {
     width: 100%;
 }
