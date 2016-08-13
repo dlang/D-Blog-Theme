@@ -36,9 +36,8 @@
                             <ul class="expand-content">
                                 <li><a href="https://dlang.org/spec/spec.html">Language Reference</a></li>
                                 <li><a href="https://dlang.org/phobos/index.html">Library Reference</a></li>
-                                <li><a href="https://dlang.org/library/index.html">NEW Library Reference Preview</a></li>
+                                <li><a href="http://dlang.org/dmd.html">Command-line Reference</a></li>
                                 <li><a href="https://dlang.org/comparison.html">Feature Overview</a></li>
-                                <li><a href="https://dlang.org/dmd-windows.html">DMD Manual</a></li>
                                 <li><a href="https://dlang.org/articles.html">Articles</a></li>
                             </ul>
                         <li>
@@ -48,27 +47,29 @@
                             <a class="expand-toggle" href="https://dlang.org/community.html"><span>Community</span>
                             </a>
                             <ul class="expand-content">
-                                <li><a href="https://dlang.org/bugstats.php">Bug Tracker</a></li>
                                 <li><a class="active" href="https://dlang.org/blog">Blog</a></li>
+                                <li><a href="http://dlang.org/orgs-using-d.html">Orgs using D</a></li>
+                                <li><a href="https://twitter.com/search/q=%23dlang">Twitter</a></li>
                                 <li><a href="https://forum.dlang.org">Forums</a></li>
                                 <li><a href="irc://irc.freenode.net/d">IRC</a></li>
-                                <li><a href="https://github.com/dlang">D on GitHub</a></li>
                                 <li><a href="https://wiki.dlang.org">Wiki</a></li>
-                                <li><a href="https://twitter.com/search/q=%23dlang">Twitter</a></li>
+                                <li><a href="https://github.com/dlang">GitHub</a></li>
+                                <li><a href="http://dlang.org/bugstats.php">Issues</a></li>
                             </ul>
                         </li>
                         <li class="expand-container">
                             <a class="expand-toggle" href="https://dlang.org/resources.html"><span>Resources</span>
                             </a>
                             <ul class="expand-content">
-                                <li><a href="https://dlang.org/tools.html">D-Specific Tools</a></li>
-                                <li><a href="http://rainers.github.io/visuald/visuald/StartPage.html">Visual D</a></li>
+                                <li><a href="https://wiki.dlang.org/Books">Books</a></li>
+                                <li><a href="https://wiki.dlang.org/Tutorials">Tutorials</a></li>
+                                <li><a href="https://wiki.dlang.org/Development_tools">Tools</a></li>
                                 <li><a href="https://wiki.dlang.org/Editors">Editors</a></li>
                                 <li><a href="https://wiki.dlang.org/IDEs">IDEs</a></li>
-                                <li><a href="https://wiki.dlang.org/Books">Books</a></li>
-                                <li><a href="https://dlang.org/dstyle.html">The D Style</a></li>
-                                <li><a href="https://dlang.org/glossary.html">Glossary</a></li>
+                                <li><a href="http://rainers.github.io/visuald/visuald/StartPage.html">Visual D</a></li>
                                 <li><a href="https://dlang.org/acknowledgements.html">Acknowledgements</a></li>
+                                <li><a href="https://dlang.org/dstyle.html">D Style</a></li>
+                                <li><a href="https://dlang.org/glossary.html">Glossary</a></li>
                                 <li><a href="https://dlang.org/sitemap.html">Sitemap</a></li>
                             </ul>
                         </li>
