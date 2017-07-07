@@ -29,7 +29,7 @@
                 </a>
                 <div id="cssmenu">
                     <ul>
-                        <li><a href="https://dlang.org/getstarted.html"><span>Learn</span></a></li>
+                        <li><a href="https://tour.dlang.org"><span>Learn</span></a></li>
                         <li class="expand-container">
                             <a class="expand-toggle" href="https://dlang.org/documentation.html"><span>Documentation</span>
                             </a>
