@@ -13,7 +13,7 @@
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="site-info">
-			Copyright © 2016 by the <a href="https://dlang.org/foundation.html">D Language Foundation</a>, All Rights Reserved
+			Content Copyright © 2016, 2017 by the <a href="https://dlang.org/foundation.html">D Language Foundation</a>, All Rights Reserved
 		</div><!-- .site-info -->
 	</footer><!-- .site-footer -->
 
