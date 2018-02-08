@@ -5700,3 +5700,19 @@ p > video {
         padding: 0;
     }
 }
+
+/*More reasonably sized images on desktop and mobile devices*/
+article img.alignleft {
+   max-height: 40%;
+   max-width: 40%;
+}
+
+@media screen and (max-width: 38.75em) {
+  article img.alignleft {
+     display: block;
+     float: none;
+     margin: 0 auto;
+     max-height: 40%;
+     max-width: 80%;
+  }
+}
