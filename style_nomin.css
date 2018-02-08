@@ -280,7 +280,8 @@ hr {
 
 ul,
 ol {
-    margin: 0 0 1.6em 1.3333em;
+    margin: 1.1em 1.1em 1.6em 1.3333em;
+    padding-left: 1.8em;
 }
 
 ul {
