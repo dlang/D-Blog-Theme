@@ -30,14 +30,13 @@
 	<div class="entry-content">
 		<?php
 			/* translators: %s: Name of current post */
-			if(!is_single()) :
+			if(!is_single()) {
 				the_excerpt();
-			else :
+				echo "<a href=" . get_permalink() . "> Read more...</a>";
+			} else {
 				the_content();
-			endif
-		?>
-			<a href="<?php echo get_permalink(); ?>"> Read More...</a>
-		<?php
+			}
+
 			wp_link_pages( array(
 				'before'      => '<div class="page-links"><span class="page-links-title">' . __( 'Pages:', 'twentyfifteen' ) . '</span>',
 				'after'       => '</div>',
