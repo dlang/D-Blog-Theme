@@ -30,11 +30,14 @@
 	<div class="entry-content">
 		<?php
 			/* translators: %s: Name of current post */
-			the_content( sprintf(
-				__( 'Continue reading %s', 'twentyfifteen' ),
-				the_title( '<span class="screen-reader-text">', '</span>', false )
-			) );
-
+			if(!is_single()) :
+				the_excerpt();
+			else :
+				the_content();
+			endif
+		?>
+			<a href="<?php echo get_permalink(); ?>"> Read More...</a>
+		<?php
 			wp_link_pages( array(
 				'before'      => '<div class="page-links"><span class="page-links-title">' . __( 'Pages:', 'twentyfifteen' ) . '</span>',
 				'after'       => '</div>',
